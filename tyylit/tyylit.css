@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(199, 226, 236);
+    width: 60%;
+    margin: auto;
+}
+
+.content {
+    background-color: rgb(246, 236, 246);
+    padding: 10px;
+}
+
+th,
+td,
+table {
+    border: 1px solid black;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
