@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
 <html lang="fi">
 
 <head>
     <title>Kurssitiedot</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -16,112 +16,201 @@
         h1,
         h2 {
             color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
         }
 
         table {
-            width: 100%;
+            width: 70%;
             border-collapse: collapse;
-            background-color: beige;
+            background-color: rgba(235, 229, 217, 0.856);
+            border: 2px solid black;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
         }
 
         th,
         td {
-            border: 1px solid #ddd;
+            border: 2px solid #090909;
             padding: 10px;
             text-align: left;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #c9c5c5;
+        }
+
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 40%;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 40%;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 20%;
+        }
+
+        .course-list {
+            background-color: rgba(192, 188, 188, 0.856);
+            padding: 15px;
+            border-radius: 8px;
+            width: fit-content;
+            margin-left: 0;
+            margin-right: 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .course-list li {
+            margin: 8px 0;
         }
     </style>
 
-    <head>
+</head>
 
-    <body>
-        <h1>Omat kurssini</h1>
-        <p>Tällä sivulla esittelen käymiäni kursseja, niiden sisältöä ja opintopistemääriä.</p>
+<body>
+    <h1>Tradenomi- opintoni</h1>
+    <p>Opiskelen parhaillani ensimmäistä vuottani LAB- ammattikorkeakoulun tradenomi- tietojenkäsittely alalla.<br>
+        Koulutus kokonaisuudessaan tradenomin tutkintoa tavoitellessa kestää 3.5 vuotta ja sisältää 210 opintopistettä.
+    </p>
 
-        <h2>Käymäni kurssit</h2>
-        <ul>
+    <h1>Mitä tradenomi- tietojenkäsittely tutkinto on?</h1>
+    <p>Tradenomi (AMK), tietojenkäsittely on ammattikorkeakoulututkinto,
+        joka keskittyy liiketoiminnan ja IT-alan yhdistämiseen.<br>
+        Tradenomi (AMK) -tutkinto antaa valmiudet toimia asiantuntijatehtävissä
+        erilaisissa yrityksissä ja organisaatioissa.<br>
+        <br>
+
+        Tutkinnon voi suorittaa monella eri toteutus tavalla:
+    <ul>
+        <li>Päiväopinnot (lähiopetus)</li>
+        <li>Monimuoto-opiskelu (ilta- ja verkko-opinnot)</li>
+        <li>Verkkototeutus (etänä)</li>
+    </ul>
+
+    <p>
+        <img src="Kuvat/Stonebridge_studySkills.jpg" width="400" height="250" alt="Kuva opiskelusta">
+    </p>
+
+    <p>Tällä sivulla esittelen käymiäni sekä käynnissä olevia kurssejani, <br>kurssien sisältöä ja
+        opintopistemääriä.</p>
+
+    <h2>Käymäni kurssit</h2>
+    <div class="course-list">
+        <ol>
             <li>Ohjelmoinnin perusteet</li>
             <li>Tietokannat</li>
             <li>Taloushallinto</li>
             <li>Asiantuntijan viestintätaidot</li>
             <li>Asiakkuudet ja markkinointi</li>
-        </ul>
+        </ol>
+    </div>
 
-        <h2>Kurssitiedot</h2>
-        <table>
-            <tr>
-                <th>Kurssi</th>
-                <th>Sisältö</th>
-                <th>Opintopisteet</th>
-            </tr>
-            <tr>
-                <td>Ohjelmoinnin perusteet</td>
-                <td>Ohjelmoinnin perusteet, ohjelmointikieli C#</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Tietokannat</td>
-                <td>Tietokantojen perusteet, SQL-kieli</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Taloushallinto</td>
-                <td>Taloushallinnon perusteet, kirjanpito</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Asiantuntijan viestintätaidot</td>
-                <td>Asiantuntijan viestintätaidot, asiakirjat, kirjallinen ja suullinen viestintä</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Asiakkuudet ja markkinointi</td>
-                <td>Asiakkuudet ja markkinointi, liiketoiminnan käsitteet, markkinointisuunnitelma,
-                    markkinointi- ja myyntiprosessin vaiheet</td>
-                <td>5</td>
-            </tr>
-        </table>
+    <h2>Kurssitiedot</h2>
+    <p>Tässä taulukossa esittelen käymiäni kursseja, niiden sisältöä ja opintopistemääriä</p>
+    <table>
+        <tr>
+            <th>Kurssi</th>
+            <th>Sisältö</th>
+            <th>Opintopisteet</th>
+        </tr>
+        <tr>
+            <td>Ohjelmoinnin perusteet</td>
+            <td>Ohjelmoinnin perusteet, ohjelmointikieli C#</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Tietokannat</td>
+            <td>Tietokantojen perusteet, SQL-kieli</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Taloushallinto</td>
+            <td>Taloushallinnon perusteet, kirjanpito</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Asiantuntijan viestintätaidot</td>
+            <td>Asiantuntijan viestintätaidot, asiakirjat, kirjallinen ja suullinen viestintä</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Asiakkuudet ja markkinointi</td>
+            <td>Asiakkuudet ja markkinointi, liiketoiminnan käsitteet, markkinointisuunnitelma,
+                markkinointi- ja myyntiprosessin vaiheet</td>
+            <td>5</td>
+        </tr>
+    </table>
 
-        <h2>Käynnissä olevat kurssit</h2>
-        <table>
-            <tr>
-                <th>Kurssi</th>
-                <th>Ajankohta</th>
-                <th>Opintopisteet</th>
-            </tr>
-            <tr>
-                <td>Webteknologiat</td>
-                <td>3.3.2025-30.4.2025</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Datan hyödyntäminen liiketoiminnassa</td>
-                <td>3.3.2025-25.4.2025</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Ohjelmistotuotanto</td>
-                <td>3.3.2025-25.4.2025</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>English for work</td>
-                <td>1.1.2025-1.4.2025</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Liike-elämän matematiikka</td>
-                <td>1.1.2025-31.5.2025</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Ammatillinen kasvu</td>
-                <td>1.8.2024-30.7.2025</td>
-                <td>5</td>
-    </body>
+    <h2>Käynnissä olevat kurssit</h2>
+    <p>Tässä kyseisessä taulukossa näet käynnissä olevat kurssit, joita parhaillaan toteutan.<br>
+        Kursseista on esillä kurssin nimi, toteutuksen ajankohta sekä opintopistemäärä</p>
+    <table>
+        <tr>
+            <th>Kurssi</th>
+            <th>Ajankohta</th>
+            <th>Opintopisteet</th>
+        </tr>
+        <tr>
+            <td>Webteknologiat</td>
+            <td>3.3.2025-30.4.2025</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Datan hyödyntäminen liiketoiminnassa</td>
+            <td>3.3.2025-25.4.2025</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Ohjelmistotuotanto</td>
+            <td>3.3.2025-25.4.2025</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>English for work</td>
+            <td>1.1.2025-1.4.2025</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Liike-elämän matematiikka</td>
+            <td>1.1.2025-31.5.2025</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Ammatillinen kasvu</td>
+            <td>1.8.2024-30.7.2025</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <h2>Lisätietoa</h2>
+    <p>Lisätietoa LAB- ammattikorkeakoulun tutkinnoista sekä kurssitarjonnasta alakohtaisesti, <br>
+        kurssisisältöineen löydät LAB-ammattikorkeakoulun verkkosivuilta:
+    </p>
+
+    <p><a href="https://opetustarjontahaku.lab.fi/search.php?"
+            target="_blank">https://opetustarjontahaku.lab.fi/search.php?</a>
+
+    <p> <img src="Kuvat/lab_logo.jpeg" width="180" height="180" alt="LAB-logo"
+            style="border: 2px solid rgb(204, 188, 173);"></p>
+</body>
 
 </html>
