@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lomaketehtävä</title>
+
+    <style>
+        fieldset {
+            width: 500px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 90%;
+        }
+
+        th,
+        td {
+            padding: 3px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact information:</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First name:</label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td colspan="2">Preferred contact method:</td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last name:</label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                    <td><input type="checkbox"></td>
+                    <td><label>Email</label></td>
+
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                    <td><input type="checkbox"></td>
+                    <td><label>Telephone</label></td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">Telephone:</label></td>
+                    <td><input type="text" id="telephone" name="telephone"></td>
+                </tr>
+            </table>
+
+        </fieldset>
+        </table>
+        <fieldset>
+            <legend>Feedback:</legend>
+            <label for="subject">Message subject:</label>
+            <input type="text" id="subject" name="subject">
+            <br><br>
+            <textarea rows="13" cols="50"></textarea>
+            <br>
+            <label for="file">Attach a file:</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+</body>
+
+</html>
