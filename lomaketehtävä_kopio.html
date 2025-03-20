@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lomaketehtävä</title>
+    <link rel="stylesheet" href="tyylit/lomaketyylit.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact information:</legend>
+            <div class="container">
+                <div class="input-container">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="input-container">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="input-container">
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" id="telephone" name="telephone">
+                </div>
+            </div>
+            <div class="container">
+                <div class="input-container">
+                    <span>Preferred contact method:</span>
+                </div>
+                <div class="input-container">
+                    <label><input type="checkbox" name="contact_method" value="email"> Email</label>
+                </div>
+                <div class="input-container">
+                    <label><input type="checkbox" name="contact_method" value="telephone"> Telephone</label>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback:</legend>
+            <div class="form-group">
+                <label for="subject">Message subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <textarea rows="5" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Attach a file:</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+</body>
+
+</html>
