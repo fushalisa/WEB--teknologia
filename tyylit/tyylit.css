@@ -55,12 +55,11 @@ fieldset {
 
 input[type=button]
 
-/*input[type=file]*/
+
     {
     background-color: rgb(242, 236, 233);
     border-color: rgb(3, 3, 3);
     border-width: 2px;
-    /*border-radius: 5px;*/
 }
 
 input[type=text],

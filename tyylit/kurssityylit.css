@@ -1,0 +1,83 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a9b5b8;
+    color: #0f0e0e;
+    margin: 10px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #0b0a0a;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-left: 1px;
+}
+
+.course-list {
+    background: #8aa3b1;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+.course {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #83a9c1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.credits {
+    font-weight: bold;
+    color: #8198ae;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    display: block;
+    justify-content: left;
+    margin-left: 2px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    border-radius: 6px;
+    padding-left: 0px;
+    margin-left: 0;
+
+
+}
+
+.study-methods {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+
+}
