@@ -1,25 +1,29 @@
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-rows: 70px auto 50px;
     grid-template-columns: 100px auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "sidebar main"
         "footer footer";
-    height: 100vh;}
+    height: 100vh;
+}
 
 .header {
     grid-area: header;
-    background-color: #e5afaf;}
+    background-color: #e5afaf;
+}
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #9edddd;}
+    background-color: #9edddd;
+}
 
 .footer {
     grid-area: footer;
     background-color: #baa2e0;
-    text-align: center;}
+    text-align: center;
+}
 
 .main {
     grid-area: main;
@@ -29,7 +33,7 @@
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     width: 300px;
     height: 400px;
     border-width: 2px;
@@ -43,8 +47,69 @@
     justify-content: space-between;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 50px;
+    grid-template-columns: 100px auto;
+    grid-template-areas:
+
+        /*"header header" */
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(174, 174, 231);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(176, 237, 217);
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(156, 155, 155);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(180, 171, 179);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    background-color: hwb(33 75% 22%);
+}
+
+/*.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
