@@ -16,11 +16,16 @@
 
         <div class="container w-50 align-items-center">
 
-            <div class="d-flex flex-row mb-3">
-                <i class="bi bi-info-circle"></i>
-                <link rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-            </div>
+
+            <h5 onmouseover="iInfo()" onmouseout="iInfo()"><i class="bi bi-info-circle"></i></h5>
+            <p class="m-3 text-center" id="i-text" style="display: none;">Ohjelma tuottaa tekstikenttiin satunnaisluvut
+                1-10 välillä
+                <br> Voit muokata numeroita "-" ja "+" painikkeista.
+                <br> Valitse haluamasi laskutoimitus.
+                <br> Klikkaa "Laske"
+            </p>
+            <br>
+
 
             <div class="d-flex flex-row mb-3 column-gap-3">
                 <div class="input-group mb-3">
@@ -48,12 +53,15 @@
                 <button class="btn btn-primary" id="calc-button" type="button" onclick="calculate()">LASKE</button>
                 <h1 class="form-control text-center" id="tulos">-</h1>
                 <section id="clicks"></section>
+                <div id="element"></div>
             </div>
         </div>
+
 
     </div>
 
     <script defer src="scripts/laskin.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </body>
 
