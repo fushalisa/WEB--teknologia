@@ -3,11 +3,14 @@ body {
     width: 60%;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    padding-top: 70px;
 }
 
 .content {
     background-color: rgb(246, 236, 246);
     padding: 10px;
+    margin: auto;
 }
 
 th,
@@ -53,10 +56,7 @@ fieldset {
     padding: 10px;
 }
 
-input[type=button]
-
-
-    {
+input[type=button] {
     background-color: rgb(242, 236, 233);
     border-color: rgb(3, 3, 3);
     border-width: 2px;
@@ -67,3 +67,4 @@ input[type=checkbox] {
     background-color: seashell;
     border-radius: 5px;
 }
+
