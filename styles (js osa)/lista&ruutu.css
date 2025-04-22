@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    grid-gap: 20px;
+    margin-top: 70px;
+}
+
+.list-container {
+    display: block;
+    justify-items: center;
+}
+
+.grid-item{
+    width: 120px;
+    height: 95px;
+    margin: 7px;
+    padding: 5px;
+    border-width: 15px;
+    border-color:rgb(159, 142, 131);
+    /*border-radius: 15px;*/
+    background-color:rgb(157, 196, 197);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
