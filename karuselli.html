@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuvakaruselli</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="styles (js osa)/styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</head>
+
+<body onload="init()"></body>
+
+<div class="container-fluid w-100 p-5 bg-light">
+  <h1 class="text-center my-5 py-2">Kuvakaruselli</h1>
+  <div class="container w-50 align-items-center">
+
+    <div class="my-5 d-flex justify-content-evenly">
+      <button class="btn1 btn-outline-primary" id="hidebutton" type="button"
+        style="background-color: rgb(29, 106, 207);color: rgb(227, 242, 255);">Hight</button>
+      <button class="btn2 btn-outline-primary" id="showbutton" type="button"
+        style="background-color: rgb(29, 106, 207); color: rgb(255, 255, 255);">Show</button>
+    </div>
+
+    <div id="kortit" class="my-5 d-flex justify-content-evenly">
+      <div class="card">
+        <img id="carusel-img" class="card-img-top">
+        <div class="card-body bg-primary">
+          <h5 class="card-title text-center" id="name" style="color: aliceblue;"></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center column-gap-3">
+      <button class="btn btn-outline-primary" id="button" type="button" onclick="previousPhoto()"><i
+          class="bi bi-arrow-left"></i></button>
+      <button class="btn btn-outline-primary" id="button" type="button" onclick="change('icon1')"><i class="bi bi-play"
+          id="icon1"></i></button>
+      <button class="btn btn-outline-primary" id="button" type="button" onclick="nextPhoto()"><i
+          class="bi bi-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script defer src="scripts/karuselli.js"> </script>
+
+</div>
+</body>
+
+</html>
